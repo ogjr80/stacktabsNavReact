@@ -30,7 +30,7 @@ const ProfileStacks = StackNavigator({
 
 
 const AccountsStack = StackNavigator({
-	Profile: {
+	Accounts: {
 		screen: Accounts, 
 		navigationOptions: {
 			title: 'Accounts',
@@ -39,7 +39,7 @@ const AccountsStack = StackNavigator({
 })
 
 const SettingsStacks = StackNavigator({
-	Profile: {
+	Settings: {
 		screen: Settings, 
 		navigationOptions: {
 			title: 'Settings',
@@ -53,12 +53,12 @@ const TabsMenu  = TabNavigator({
 	Stores: {
 		screen: MainStacks
 	}, 
-	Profile: {
-		screen: ProfileStacks
-	},
 	Accounts: {
 		screen: AccountsStack, 
 	}, 
+	Profile: {
+		screen: ProfileStacks
+	},
 	Settings: {
 		screen: SettingsStacks,
 	}

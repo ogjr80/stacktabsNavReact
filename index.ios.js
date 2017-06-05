@@ -6,31 +6,33 @@
 
 import React, { Component } from 'react';
 import {
+  Text,
+  View,
   AppRegistry,
   StyleSheet,
-  Text,
-  View
 } from 'react-native';
+
+import  TabsMenu  from './config/router'; 
+
+
+
 
 export default class gitHubnotesTaker extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-      </View>
+        <TabsMenu />         
     );
   }
 }
 
+
+// class SomeComponent extends Component{
+//   render(){
+//     return (
+//         <Text>Hello {this.props.name} </Text> 
+//       )
+//   }
+// }
 const styles = StyleSheet.create({
   container: {
     flex: 1,
