@@ -1,19 +1,33 @@
-import React, {Component} from 'react'; 
+import React from 'react'; 
 import {
 	View, 
 	Text,
+	TouchableOpacity,
 } from 'react-native'; 
 
 
- class Main extends  Component{
-	render(){
+import ListContacts from './ListItem'; 
+
+	const Main = () => ({
+		render(){
 		return (
 
 			<View> 
-				<Text>Hello Main</Text> 
+				<ListContacts /> 
 			</View> 
 		)
 	}
-}
+	})
+
+//  class Main extends  Component{
+// 	render(){
+// 		return (
+
+// 			<View> 
+// 				<ListContacts /> 
+// 			</View> 
+// 		)
+// 	}
+// }
 
 export default Main; 

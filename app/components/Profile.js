@@ -1,11 +1,10 @@
-import React, {Component} from 'react'; 
+import React from 'react'; 
 import {
 	View, 
 	Text,
 } from 'react-native'; 
 
-
- class Profile extends  Component{
+const Profile = () => ({
 	render(){
 		return (
 
@@ -14,6 +13,16 @@ import {
 			</View> 
 		)
 	}
-}
+})
+//  class Profile extends  Component{
+// 	render(){
+// 		return (
+
+// 			<View> 
+// 				<Text>Hello Profile</Text> 
+// 			</View> 
+// 		)
+// 	}
+// }
 
 export default Profile; 
